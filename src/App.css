@@ -1,0 +1,30 @@
+
+
+.board{
+  background-color: rgb(247, 240, 240);
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto ;
+
+}
+img{
+  width: 700px;
+  margin: 0 auto;
+}
+.item img{
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  margin: 0;
+  font-size: 50px;
+}
+
+.item:hover{
+  background-color: white;
+  cursor: pointer;
+}.container{
+  display: flex;
+}
