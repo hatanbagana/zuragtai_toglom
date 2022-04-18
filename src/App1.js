@@ -54,7 +54,7 @@ export default function App1() {
     let col = array1[0].length;
     for (let i = 0; i < row; i++) {
       for (let j = 0; j < col; j++) {
-        if (array1[i][j] == "0.png") {
+        if (array1[i][j] === "0.png") {
           return [i, j];
         }
       }
