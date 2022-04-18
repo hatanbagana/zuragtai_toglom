@@ -11,6 +11,7 @@ export default function App1() {
   ]);
   const [winPos, setWinPos] = useState()
   const [changed, setChanged] = useState(false);
+  const [changed1, setChanged1] = useState(false);
   function shuffle(array) { 
     return array.sort(() => Math.random() - 0.5);
   }
@@ -26,7 +27,7 @@ export default function App1() {
     setArray1(array1.map(row=>shuffle(row)))
     setPos(findZeroClicked())
 
-  })
+  },[changed1])
 
  
 
