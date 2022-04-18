@@ -26,7 +26,7 @@ export default function App1() {
     setArray1(array1.map(row=>shuffle(row)))
     setPos(findZeroClicked())
 
-  },[])
+  })
 
  
 
