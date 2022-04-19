@@ -17,11 +17,6 @@ export default function App1() {
   function shuffle(array) {
     return array.sort(() => Math.random() - 0.5);
   }
-  // const [sda , setSda] = useState(0)
-  // setSda(()=>{
-  //   return 12
-  // })
-  // console.log(sda);
   const [pos, setPos] = useState();
 
   useEffect(() => {
@@ -48,7 +43,6 @@ export default function App1() {
       setArray1(temp);
       setChanged(!changed);
     }
-
     checkWinning();
   }
 
