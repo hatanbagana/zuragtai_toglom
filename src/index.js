@@ -4,13 +4,15 @@ import './index.css';
 import App1 from './App1';
 
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
     <div className="container">
 
-      <img src="images/banner.jpg" alt="" />
+
+      <img src="images/round1/banner.jpg" alt="" />
       <App1 />
     </div>
   </React.StrictMode>
