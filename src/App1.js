@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import Item from "./Components/Item";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Navbar} from "react-bootstrap";
 
 export default function App1() {
   const [array1, setArray1] = useState([
