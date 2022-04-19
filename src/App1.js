@@ -9,6 +9,7 @@ export default function App1() {
     ["4", "5", "6"],
     ["7", "8", "0"],
   ]);
+  const [isTrue, setIsTrue] = useState(false)
   const [winPos, setWinPos] = useState();
   const [changed, setChanged] = useState(false);
   function shuffle(array) {
@@ -81,11 +82,13 @@ export default function App1() {
     }
     setTimeout(() => {
       alert("yalla");
-    }, 1000);
+    }, 500);
   }
 
   return (
     <div>
+
+
       <div className="board">
         {array1.map((row, rowIndex) =>
           row.map((col, i) => (
@@ -98,7 +101,14 @@ export default function App1() {
             />
           ))
         )}
+
       </div>
+      <img className="blind-img" onClick={()=>setIsTrue(!isTrue)} src={`images/${isTrue? 'blind' : 'view'}.png`} alt="" />
+      
+      {isTrue?<img className="game-obj" src="images/round3/banner.jpg" alt="" />: null }
+
+
+            
     </div>
   );
 }
